@@ -2,7 +2,7 @@
 
 # <center>INTERCITY EXPRESS TRAINS</center>
 <hr>
-
+## Entity Relationship Diagram
 <img
   src="/erDiagram.jpg"
   alt="Alt text"
