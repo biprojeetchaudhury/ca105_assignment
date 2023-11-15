@@ -8,7 +8,7 @@
   src="/erDiagram.jpg"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto;width: 100%;height:100%">
+  style="display: inline-block; margin: 0 auto;width: 100%;height:100%;padding:10px">
 <hr>
 
 ## Relations
@@ -80,9 +80,6 @@ create table stations(station_no varchar(10) primary key,station_name varchar(30
 create table tickets(ticket_no varchar(10) primary key,status varchar(10),board_stn varchar(10),drop_stn varchar(10),date_of_journey date,booking_date date,fare float(2),travel_agent_id varchar(10),foreign key(board_stn) references stations(station_no), foreign key(drop_stn) references stations(station_no),foreign key(travel_agent_id) references travel_agents(travel_agent_id));
 ```
 ```sql
-
-```
-```sql
 create table train_coaches(train_no int,coach_no varchar(10),date_from date,date_to date,foreign key(train_no) references trains(train_no),foreign key(coach_no) references active_coaches(coach_no),primary key(train_no,coach_no,date_from,date_to));
 
 ```
@@ -98,3 +95,5 @@ create table travel_agents(travel_agent_id varchar(10) primary key,travel_agent_
 ```sql
 create table seats(seat_no int primary key,type varchar(20));
 ```
+<hr>
+## Insert Statements
