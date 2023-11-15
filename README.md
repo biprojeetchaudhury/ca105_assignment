@@ -4,7 +4,7 @@
   src="/erDiagram.jpg"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto;width: 100px;height:100px">
+  style="display: inline-block; margin: 0 auto;width: 100%;height:100%">
 <hr>
 
 ## Head2
