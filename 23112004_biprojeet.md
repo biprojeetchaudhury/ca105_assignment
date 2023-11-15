@@ -13,7 +13,7 @@
 ## OUTPUT
 
 <img
-  src="./23112004_biprojeet/c1.jpg"
+  src="./23112004_biprojeet/C1.jpg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto;width: 100%;height:100%;padding:10px">
