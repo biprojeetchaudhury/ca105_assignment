@@ -1,7 +1,6 @@
 # ca105_assignment
 
 # <center>INTERCITY EXPRESS TRAINS</center>
-<hr>
 
 ## Entity Relationship Diagram
 
