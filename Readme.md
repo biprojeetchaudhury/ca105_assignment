@@ -125,7 +125,46 @@ INSERT INTO travel_agents (travel_agent_id, travel_agent_name, address, contactn
 ```
 
 ```sql
-insert into stations( station_code, station_name, no_of_platform, state) values ('PUNE','Pune',6,'MAHARASHTRA'),("CSMT","MUMBAI",12,"MAHARASHTRA"),('JAM','GANDHINAGAR',10,"GUJARAT"),("ST","SURAT",6,"GUJARAT"),("SINA","SRINAGAR",7,"JAMMU-KASHMIR"),("SNSI","SAINAGAR SHIRDI TERMINUS",6,"MAHARASHTRA"),("SUR","SOLAPUR",5,"MAHARASHTRA"),("SOP","SHIVPUR",3,"MAHARASHTRA"),("VSG","GOA",8,"GOA"),("NDLS","NEW DELHI",15,"NEW DELHI"),("UHL","UNA HIMACHAL",7,"HIMACHAL PRADESH"),("LJN","LUCKNOW",12,"UTTAR PRADESH"),("SC","SECUNDERABAD",12,"ANDHRA PRADESH"),("VSKP","VISHAKHAPATNAM",20,"ANDHRA PRADESH"),("BSB","VARANASI",12,"UTTAR PRADESH"),("BPL","BHOPAL",5,"MADHYA PRADESH"),("INDB","INDORE",6,"MADHYA PRADESH"),("LNL","LONAVALA",4,"MAHARASHTRA"),("AII","AJMER",7,"RAJASTHAN"),("DWR","DHARWAD",6,"KARNATKA"),("SBC","BENGALURU",20,"KARNATKA"),("NGP","NAGPUR",9,"MAHARASHTRA"),("MFP","MUZAFFARPUR",8,"BIHAR"),("PNBE","PATNA",10,"BIHAR"),("RXL","RAXAUL",8,"BIHAR"),("BUI","BALLIA",6,"UTTAR PRADESH"),("GKP","GORAKHPUR",15,"UTTAR PRADESH"),("PRYJ","PRAYAGRAJ",8,"UTTAR PRADESH"),("HWH","HOWRAH",20,"WEST BENGAL"),("CNB","KANPUR",11,"UTTAR PRADESH"),('BCT', 'Mumbai Central', 8, 'Maharashtra'),('MAA', 'Chennai Central', 14, 'Tamil Nadu'),('MAS', 'Chennai Terminus', 10, 'Tamil Nadu'),('MMCT', 'Mumbai Central Terminus', 9, 'Maharashtra'),('YPR', 'Yesvantpur Main', 7, 'Karnataka'),('ADI', 'Ahmedabad Main', 9, 'Gujarat'),('JP', 'Jaipur Main', 6, 'Rajasthan'),('LTT', 'Lokmanya Tilak Main', 9, 'Maharashtra');
+INSERT INTO stations (station_code, station_name, no_of_platform, state) VALUES
+('PUNE', 'Pune', 6, 'MAHARASHTRA'),
+('CSMT', 'MUMBAI', 12, 'MAHARASHTRA'),
+('JAM', 'GANDHINAGAR', 10, 'GUJARAT'),
+('ST', 'SURAT', 6, 'GUJARAT'),
+('SINA', 'SRINAGAR', 7, 'JAMMU-KASHMIR'),
+('SNSI', 'SAINAGAR SHIRDI TERMINUS', 6, 'MAHARASHTRA'),
+('SUR', 'SOLAPUR', 5, 'MAHARASHTRA'),
+('SOP', 'SHIVPUR', 3, 'MAHARASHTRA'),
+('VSG', 'GOA', 8, 'GOA'),
+('NDLS', 'NEW DELHI', 15, 'NEW DELHI'),
+('UHL', 'UNA HIMACHAL', 7, 'HIMACHAL PRADESH'),
+('LJN', 'LUCKNOW', 12, 'UTTAR PRADESH'),
+('SC', 'SECUNDERABAD', 12, 'ANDHRA PRADESH'),
+('VSKP', 'VISHAKHAPATNAM', 20, 'ANDHRA PRADESH'),
+('BSB', 'VARANASI', 12, 'UTTAR PRADESH'),
+('BPL', 'BHOPAL', 5, 'MADHYA PRADESH'),
+('INDB', 'INDORE', 6, 'MADHYA PRADESH'),
+('LNL', 'LONAVALA', 4, 'MAHARASHTRA'),
+('AII', 'AJMER', 7, 'RAJASTHAN'),
+('DWR', 'DHARWAD', 6, 'KARNATAKA'),
+('SBC', 'BENGALURU', 20, 'KARNATAKA'),
+('NGP', 'NAGPUR', 9, 'MAHARASHTRA'),
+('MFP', 'MUZAFFARPUR', 8, 'BIHAR'),
+('PNBE', 'PATNA', 10, 'BIHAR'),
+('RXL', 'RAXAUL', 8, 'BIHAR'),
+('BUI', 'BALLIA', 6, 'UTTAR PRADESH'),
+('GKP', 'GORAKHPUR', 15, 'UTTAR PRADESH'),
+('PRYJ', 'PRAYAGRAJ', 8, 'UTTAR PRADESH'),
+('HWH', 'HOWRAH', 20, 'WEST BENGAL'),
+('CNB', 'KANPUR', 11, 'UTTAR PRADESH'),
+('BCT', 'Mumbai Central', 8, 'Maharashtra'),
+('MAA', 'Chennai Central', 14, 'Tamil Nadu'),
+('MAS', 'Chennai Terminus', 10, 'Tamil Nadu'),
+('MMCT', 'Mumbai Central Terminus', 9, 'Maharashtra'),
+('YPR', 'Yesvantpur Main', 7, 'Karnataka'),
+('ADI', 'Ahmedabad Main', 9, 'Gujarat'),
+('JP', 'Jaipur Main', 6, 'Rajasthan'),
+('LTT', 'Lokmanya Tilak Main', 9, 'Maharashtra');
+
 
 ```
 
