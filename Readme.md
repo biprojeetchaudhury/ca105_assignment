@@ -4,11 +4,11 @@
 
 ## Member Contributions
    - ### Shashi Ranjan Kumar
-       * ER Diagram,Relations
+       * ER Diagram,Creation of Realtional Schema,Insertion of data into tables
   - ### Ankit Kumar
-      * Data collection and organization
+      * Relations from ER diagram,Insertion of data into tables
   - ### Biprojeet Choudhary
-      * Data Organization and Insertion of Data into tables
+      * Data Collection and Organization
 ## Entity Relationship Diagram
 
 <img
