@@ -4,7 +4,7 @@
 
 ## Member Contributions
    - ### Shashi Ranjan Kumar
-       * ER Diagram,Creation of Realational Schema, Insertion of data into tables
+       * ER Diagram,Creation of Relational Schema, Insertion of data into tables
   - ### Ankit Kumar
       * Relations from ER diagram, Insertion of data into tables
   - ### Biprojeet Choudhary
