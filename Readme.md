@@ -65,7 +65,7 @@ create table coaches(coach_no varchar(10) primary key,manufacturer varchar(50),l
 create table maintainance(maintain_no varchar(10) primary key,maintain_type varchar(20),maintain_date date,coach_no varchar(10),foreign key(coach_no) references coaches(coach_no));
 ```
 ```sql
-create table routes(route_no varchar(10) primary key,route_name varchar(30),time_taken time,total_dist_km int,start_stn varchar(10),start_time time,end_stn varchar(10),end_time time,foreign key(start_stn) references stations(station_no),foreign key(end_stn) references stations(station_no));
+create table routes(route_no varchar(10) primary key,route_name varchar(30),time_taken time,total_dist_km int,start_stn varchar(10),start_time time,end_stn varchar(10),end_time time,foreign key(start_stn) references stations(station_code),foreign key(end_stn) references stations(station_code));
 ```
 ```sql
 create table seat_allocated(ticket_no varchar(10),coach_no varchar(10),seat_no int,seat_type varchar(10),Date date,Time time,foreign key(ticket_no) references tickets(ticket_no),foreign key(coach_no) references active_coaches(coach_no),foreign key(seat_no) references seats(seat_no),primary key(ticket_no,Date,Time));
@@ -84,7 +84,7 @@ create table stations(station_code varchar(10) primary key,station_name varchar(
 
 ```
 ```sql
-create table tickets(ticket_no varchar(10) primary key,status varchar(10),board_stn varchar(10),drop_stn varchar(10),date_of_journey date,booking_date date,fare float(2),travel_agent_id varchar(10),foreign key(board_stn) references stations(station_no), foreign key(drop_stn) references stations(station_no),foreign key(travel_agent_id) references travel_agents(travel_agent_id));
+create table tickets(ticket_no varchar(10) primary key,train_no int,status varchar(10),passenger_name varchar(30),age int,passenger_type enum("child","adult","senior-citizen"),board_stn varchar(10),drop_stn varchar(10),date_of_journey date,booking_date date,fare float(2),discount float(2),travel_agent_id varchar(10),agent_comm float(2),foreign key(train_no) references trains(train_no),foreign key(board_stn) references stations(station_code), foreign key(drop_stn) references stations(station_code),foreign key(travel_agent_id) references travel_agents(travel_agent_id));
 ```
 ```sql
 create table train_coaches(train_no int,coach_no varchar(10),date_from date,date_to date,foreign key(train_no) references trains(train_no),foreign key(coach_no) references active_coaches(coach_no),primary key(train_no,coach_no,date_from,date_to));
