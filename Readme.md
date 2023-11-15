@@ -19,7 +19,7 @@ Stations(Station_code,Station_name,No_of_Platform,State)
  
 Trains(Train_no,Train_name,Capacity,Route_no)
  
-Coaches(coach_no,made_by,last_maintained,after_maintained_dist)
+Coaches(coach_no,made_by,last_maintained,mileage)
  
 Active_Coaches(Coach_no,Train_no,Date)
  
@@ -52,28 +52,28 @@ create database intercity_express_trains;
 create table active_coaches(coach_no varchar(10) primary key,train_no int,foreign key(train_no) references trains(train_no));
 ```
 ```sql
-create table coaches(coach_no varchar(10) primary key,manufacturer varchar(50),last_maintained date,after_maintain_dist int,total_dist_covered int);
+create table coaches(coach_no varchar(10) primary key,manufacturer varchar(50),last_maintained date,mileage int);
 ```
 ```sql
-create table maintainance(maintain_no varchar(10) primary key,maintain_desc varchar(60),maintain_type varchar(20),active_coach_no varchar(10),foreign key(active_coach_no) references active_coaches(coach_no));
+create table maintainance(maintain_no varchar(10) primary key,maintain_type varchar(20),maintain_date date,coach_no varchar(10),foreign key(coach_no) references coaches(coach_no));
 ```
 ```sql
 create table routes(route_no varchar(10) primary key,route_name varchar(30),time_taken time,total_dist_km int,start_stn varchar(10),start_time time,end_stn varchar(10),end_time time,foreign key(start_stn) references stations(station_no),foreign key(end_stn) references stations(station_no));
 ```
 ```sql
-create table seat_allocated(ticket_no varchar(10),passenger_no varchar(10),coach_no varchar(10),seat_no int,Date date,Time time,foreign key(ticket_no) references tickets(ticket_no),foreign key(passenger_no) references passengers(passenger_no),foreign key(coach_no) references active_coaches(coach_no),foreign key(seat_no) references seats(seat_no),primary key(ticket_no,passenger_no,Date,Time));
+create table seat_allocated(ticket_no varchar(10),coach_no varchar(10),seat_no int,seat_type varchar(10),Date date,Time time,foreign key(ticket_no) references tickets(ticket_no),foreign key(coach_no) references active_coaches(coach_no),foreign key(seat_no) references seats(seat_no),primary key(ticket_no,Date,Time));
 ```
 ```sql
-create table staff_schedule(route_no varchar(10),train_no int,staff_no varchar(10),remark varchar(10),date date,time time,accomodation varchar(10),foreign key(route_no) references routes(route_no),foreign key(train_no) references trains(train_no),foreign key(staff_no) references staffs(staff_no),primary key(route_no,train_no,staff_no,date));
+create table staff_schedule(route_no varchar(10),train_no int,staff_no varchar(10),remark varchar(20),date date,time time,accomodation varchar(10),foreign key(route_no) references routes(route_no),foreign key(train_no) references trains(train_no),foreign key(staff_no) references staffs(staff_no),primary key(route_no,train_no,staff_no,date));
 ```
 ```sql
 create table staffs(staff_no varchar(10) primary key,staff_name varchar(20),contact_no varchar(15),residence_city varchar(20));
 ```
 ```sql
-create table standby_coaches(coach_no varchar(10) primary key);
+create table standby_coaches(coach_no varchar(10),Date date,primary key(coach_no,date),foreign key(coach_no) references coaches(coach_no));
 ```
 ```sql
-create table stations(station_no varchar(10) primary key,station_name varchar(30),no_of_platform int,state varchar(20));
+create table stations(station_code varchar(10) primary key,station_name varchar(30),no_of_platform int,state varchar(20));
 
 ```
 ```sql
@@ -84,7 +84,7 @@ create table train_coaches(train_no int,coach_no varchar(10),date_from date,date
 
 ```
 ```sql
-create table train_schedule(route_no varchar(10),train_no int,station_no varchar(10),Date date,EAT time,AAT time,EDT time,ADT time,foreign key(route_no) references routes(route_no),foreign key(train_no) references trains(train_no),foreign key(station_no) references stations(station_no),primary key(route_no,train_no,station_no,Date));
+create table train_schedule(route_no varchar(10),train_no int,station_code varchar(10),Date date,EAT time,AAT time,EDT time,ADT time,foreign key(route_no) references routes(route_no),foreign key(train_no) references trains(train_no),foreign key(station_code) references stations(station_code),primary key(route_no,train_no,station_code,Date));
 ```
 ```sql
 create table trains(train_no int primary key,train_name varchar(30),capacity int,route_no varchar(10) not null,foreign key(route_no) references routes(route_no));
