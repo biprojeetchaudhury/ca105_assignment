@@ -585,3 +585,5 @@ INSERT INTO ticket_info (ticket_no, train_no, status, passenger_name, age, passe
 ```sql
 
 ```
+## Part 2 
+ - [Shashi](https://github.com/ranjanshashi9471/ca105_assignment/shashi_23112036.md)
