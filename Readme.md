@@ -135,10 +135,12 @@ insert into stations( station_no, station_name, no_of_platform, state) values ('
 INSERT INTO ROUTES (route_no,route_name,time_taken,total_dist_km,start_stn,start_time,end_stn,end_time) values("RT001","MUMBAI CENTRAL-GANDHINAGAR",'05:40:00',548,"CSMT",'09:00:00',"JAM",'14:40:00'),("RT014","GANDHINAGAR-MUMBAI CENTRAL",'05:40:00',548,"JAM",'16:40:00',"CSMT",'22:20:00'),("RT002","NEW DELHI-HIMACHAL",'06:10:00',412,"NDLS",'07:00:00',"UHL",'13:10:00'),("RT015","HIMACHAL-NEW DELHI",'06:10:00',412,"UHL",'16:10:00',"NDLS",'22:20:00'),("RT003","SECUNDERABAD-VISAKHAPATNAM",'08:30:00',500,"SC",'10:00:00',"VSKP",'18:30:00'),("RT016","VISAKHAPATNAM-SECUNDERABAD",'08:30:00',500,"VSKP",'21:30:00',"SC",'06:00:00'),("RT004","MUMBAI-SAINAGAR SHIRDI",'05:20:00',248,"CSMT",'11:40:00',"SNSI",'05:00:00'),("RT017","SAINAGAR SHIRDI-MUMBAI",'05:20:00',248,"SNSI",'07:00:00',"CSMT",'12:20:00'),("RT005","MUMBAI-SOLAPUR",'06:35:00',400,"CSMT",'08:25:00',"SUR",'15:00:00'),("RT018","SOLAPUR-MUMBAI",'06:35:00',400,"SUR",'17:00:00',"CSMT",'23:35:00'),("RT006","BHOPAL-DELHI",'07:45:00',700,"BPL",'20:15:00',"NDLS",'04:00:00'),("RT019","DELHI-BHOPAL",'07:45:00',700,"NDLS",'06:00:00',"BPL",'13:45:00'),("RT007","LONAVALA-AJMER",'10:45:00',1062,"LNL",'02:15:00',"AII",'13:00:00'),("RT020","AJMER-LONAVALA",'10:45:00',1062,"AII",'16:00:00',"LNL",'02:45:00'),("RT008","DHARWAD-BENGALURU",'05:00:00',432,"DWR",'05:00:00',"SBC",'10:00:00'),("RT021","BENGALURU-DHARWAD",'05:00:00',432,"SBC",'12:00:00',"DWR",'17:00:00'),("RT009","BHOPAL-INDORE",'03:00:00',246,"BPL",'21:15:00',"INDB",'00:15:00'),("RT022","INDORE-BHOPAL",'03:00:00',246,"INDB",'03:15:00',"BPL",'06:15:00'),("RT010","MUMBAI-GOA",'06:00:00',588,"CSMT",'03:00:00',"VSG",'09:00:00'),("RT023","GOA-MUMBAI",'06:00:00',588,"VSG",'12:15:00',"CSMT",'18:15:00'),("RT011","RAXAUL-HOWRAH",'17:50:00',691,"RXL",'10:10:00',"HWH",'04:00:00'),("RT024","HOWRAH-RAXAUL",'17:50:00',691,"HWH",'06:00:00',"RXL",'23:50:00');
 
 ```
+
 ```sql
 insert into seats (seat_no,type) values (1,"LOWER"),(2,"MIDDLE"),(3,"UPPER"),(7,"S_LOWER"),(8,"S_UPPER"),(4,"LOWER"),(5,"MIDDLE"),(6,"UPPER"),(9,"LOWER"),(10,"MIDDLE"),(11,"UPPER"),(12,"LOWER"),(13,"MIDDLE"),(14,"UPPER"),(17,"LOWER"),(18,"MIDDLE"),(19,"UPPER"),(20,"LOWER"),(21,"MIDDLE"),(22,"UPPER"),(25,"LOWER"),(26,"MIDDLE"),(27,"UPPER"),(28,"LOWER"),(29,"MIDDLE"),(30,"UPPER"),(15,"S_LOWER"),(16,"S_UPPER"),(23,"S_LOWER"),(24,"S_UPPER");
 
 ```
+
 ```sql
 INSERT INTO maintainance (maintain_no, maintain_type, maintain_date, coach_no)
 SELECT CONCAT('MNT', LPAD(ROW_NUMBER() OVER (), 3, '0')) AS maintain_no,
@@ -151,6 +153,7 @@ SELECT CONCAT('MNT', LPAD(ROW_NUMBER() OVER (), 3, '0')) AS maintain_no,
 FROM coaches;
 
 ```
+
 ```sql
 insert into train_schedule(route_no,train_no,station_code,Date,EAT,AAT,EDT,ADT) values
 ('RT001',22945,'CSMT','2023-10-14',NULL,NULL,'09:00:00','09:00:00'),
@@ -207,6 +210,7 @@ insert into train_schedule(route_no,train_no,station_code,Date,EAT,AAT,EDT,ADT) 
 ('RT024',13021,'RXL','2024-03-16','23:50:00','23:50:00',NULL,NULL)
 
 ```
+
 ```sql
 INSERT INTO coaches (coach_no, manufacturer, last_maintained, mileage) VALUES
 ('CN001', 'XYZ Company', '2023-10-15', 5000),
@@ -382,6 +386,7 @@ INSERT INTO train_coaches (train_no, coach_no, date_from) VALUES
 (22945, 'CN066', '2023-11-14');
 
 ```
+
 ```sql
 INSERT INTO active_coaches (coach_no, train_no) VALUES
 ('CN001', '10102'),
@@ -452,6 +457,7 @@ INSERT INTO active_coaches (coach_no, train_no) VALUES
 ('CN066', '22945');
 
 ```
+
 ```sql
 insert into staff_schedule(route_no,train_no,staff_no,remark,date,time) values
 ('RT001',22945,'S001','MAIN DRIVER','2023-10-10','09:00:00'),
@@ -508,6 +514,7 @@ insert into staff_schedule(route_no,train_no,staff_no,remark,date,time) values
 ('RT024',13021,'S022','CO-DRIVER','2024-03-16','06:00:00');
 
 ```
+
 ```sql
 INSERT INTO staffs (staff_no, staff_name, contact_no, residence_city) VALUES
 ('S001', 'Rahul Sharma', '+91 12345 67890', 'Delhi'),
@@ -611,6 +618,7 @@ INSERT INTO staffs (staff_no, staff_name, contact_no, residence_city) VALUES
 ('S099', 'Tanvi Sinha', '+91 11111 11111', 'Jaipur'),
 ('S100', 'Arnav Sharma', '+91 99999 99999', 'Hyderabad');
 ```
+
 ```sql
 INSERT INTO ticket_info (ticket_no, train_no, status, passenger_name, age, passenger_type, board_stn, drop_stn, date_of_journey, booking_date, fare, discount, travel_agent_id, agent_comm)VALUES
 ('TKT001', 22945, 'confirmed', 'Priya Patel', 28, 'adult', 'CSMT', 'JAM', '2023-12-15', '2023-11-01', 1200, 0, 'TA001', 120),
@@ -675,6 +683,7 @@ INSERT INTO ticket_info (ticket_no, train_no, status, passenger_name, age, passe
 ('TKT060', 10102, 'confirmed', 'Suresh Patel', 31, 'adult', 'VSG', 'CSMT', '2024-03-30', '2024-02-20', 1450, 0, 'TA004', 145);
 
 ```
+
 ```sql
 
 ```
