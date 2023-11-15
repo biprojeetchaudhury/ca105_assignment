@@ -103,6 +103,26 @@ create table seats(seat_no int primary key,type varchar(20));
 insert into trains(train_no,train_name,capacity,route_no) values ('22945','SAURASHTRA MAIL',90,"RT001"),('14553','HIMACHAL EXPRESS',90,"RT002"),('11019','KONARK EXPRESS',90,"RT003"),('22223','SHIRDI VANDEBHARAT EXPRESS',90,"RT004"),(11301,"UDYAN EXPRESS",90,"RT005"),(12715,"SACHKHAND EXPRESS",90,"RT006"),(19628,"AJMER SUPERFAST EXPRESS",90,"RT007"),(17325,"VISHWAMANAVA EXPRESS",90,"RT008"),(18234,"NARMADA EXPRESS",90,"RT009"),(10103,"MANDOVI EXPRESS",90,"RT010"),(13022,"MITHILA EXPRESS",90,"RT011"),('22946','SAURASHTRA MAIL',90,"RT014"),('14552','HIMACHAL EXPRESS',90,"RT015"),('11020','KONARK EXPRESS',90,"RT016"),('22222','SHIRDI VANDEBHARAT EXPRESS',90,"RT017"),(11302,"UDYAN EXPRESS",90,"RT018"),(12716,"SACHKHAND EXPRESS",90,"RT019"),(19627,"AJMER SUPERFAST EXPRESS",90,"RT020"),(17326,"VISHWAMANAVA EXPRESS",90,"RT021"),(18235,"NARMADA EXPRESS",90,"RT022"),(10102,"MANDOVI EXPRESS",90,"RT023"),(13021,"MITHILA EXPRESS",90,"RT024");
 
 ```
+
+```sql
+INSERT INTO travel_agents (travel_agent_id, travel_agent_name, address, contactno, email) VALUES
+('TA001', 'Aarav Gupta', 'New Delhi', '+91 12345 67890', 'aarav@example.com'),
+('TA002', 'Mira Patel', 'Mumbai', '+91 98765 43210', 'mira@example.com'),
+('TA003', 'Krish Sharma', 'Bengaluru', '+91 11122 23333', 'krish@example.com'),
+('TA004', 'Ishaan Kumar', 'Chennai', '+91 44455 56666', 'ishaan@example.com'),
+('TA005', 'Anaya Singh', 'Kolkata', '+91 77788 89999', 'anaya@example.com'),
+('TA006', 'Diya Mishra', 'Hyderabad', '+91 99900 01111', 'diya@example.com'),
+('TA007', 'Kabir Khan', 'Pune', '+91 22233 34444', 'kabir@example.com'),
+('TA008', 'Riya Thakur', 'Jaipur', '+91 55566 67777', 'riya@example.com'),
+('TA009', 'Aryan Choudhary', 'Ahmedabad', '+91 88899 00000', 'aryan@example.com'),
+('TA010', 'Avni Agarwal', 'Kochi', '+91 66677 88888', 'avni@example.com'),
+('TA011', 'Rehan Malhotra', 'Chandigarh', '+91 33344 45555', 'rehan@example.com'),
+('TA012', 'Sia Verma', 'Lucknow', '+91 00011 12222', 'sia@example.com'),
+('TA013', 'Kabir Gupta', 'Goa', '+91 11122 23333', 'kabir@example.com'),
+('TA014', 'Anika Rajput', 'Indore', '+91 22233 34444', 'anika@example.com'),
+('TA015', 'Veer Singh', 'Jaipur', '+91 33344 45555', 'veer@example.com');
+
+```
 ```sql
 insert into stations( station_no, station_name, no_of_platform, state) values ('PUNE','Pune',6,'MAHARASHTRA'),("CSMT","MUMBAI",12,"MAHARASHTRA"),('JAM','GANDHINAGAR',10,"GUJARAT"),("ST","SURAT",6,"GUJARAT"),("SINA","SRINAGAR",7,"JAMMU-KASHMIR"),("SNSI","SAINAGAR SHIRDI TERMINUS",6,"MAHARASHTRA"),("SUR","SOLAPUR",5,"MAHARASHTRA"),("SOP","SHIVPUR",3,"MAHARASHTRA"),("VSG","GOA",8,"GOA"),("NDLS","NEW DELHI",15,"NEW DELHI"),("UHL","UNA HIMACHAL",7,"HIMACHAL PRADESH"),("LJN","LUCKNOW",12,"UTTAR PRADESH"),("SC","SECUNDERABAD",12,"ANDHRA PRADESH"),("VSKP","VISHAKHAPATNAM",20,"ANDHRA PRADESH"),("BSB","VARANASI",12,"UTTAR PRADESH"),("BPL","BHOPAL",5,"MADHYA PRADESH"),("INDB","INDORE",6,"MADHYA PRADESH"),("LNL","LONAVALA",4,"MAHARASHTRA"),("AII","AJMER",7,"RAJASTHAN"),("DWR","DHARWAD",6,"KARNATKA"),("SBC","BENGALURU",20,"KARNATKA"),("NGP","NAGPUR",9,"MAHARASHTRA"),("MFP","MUZAFFARPUR",8,"BIHAR"),("PNBE","PATNA",10,"BIHAR"),("RXL","RAXAUL",8,"BIHAR"),("BUI","BALLIA",6,"UTTAR PRADESH"),("GKP","GORAKHPUR",15,"UTTAR PRADESH"),("PRYJ","PRAYAGRAJ",8,"UTTAR PRADESH"),("HWH","HOWRAH",20,"WEST BENGAL"),("CNB","KANPUR",11,"UTTAR PRADESH"),('BCT', 'Mumbai Central', 8, 'Maharashtra'),
 ('MAA', 'Chennai Central', 14, 'Tamil Nadu'),('MAS', 'Chennai Terminus', 10, 'Tamil Nadu'),('MMCT', 'Mumbai Central Terminus', 9, 'Maharashtra'),
@@ -289,8 +309,79 @@ INSERT INTO coaches (coach_no, manufacturer, last_maintained, mileage) VALUES
 ('CN100', 'EFG Co', '2023-10-30', 3000);
 
 ```
+
 ```sql
-INSERT INTO your_table_name (coach_no, train_no) VALUES
+INSERT INTO train_coaches (train_no, coach_no, date_from) VALUES
+(10102, 'CN001', '2023-11-14'),
+(10102, 'CN002', '2023-11-14'),
+(10102, 'CN003', '2023-11-14'),
+(10102, 'CN004', '2023-11-14'),
+(10102, 'CN005', '2023-11-14'),
+(10102, 'CN006', '2023-11-14'),
+(11301, 'CN007', '2023-11-14'),
+(11301, 'CN008', '2023-11-14'),
+(11301, 'CN009', '2023-11-14'),
+(11301, 'CN010', '2023-11-14'),
+(11301, 'CN011', '2023-11-14'),
+(11301, 'CN012', '2023-11-14'),
+(11019, 'CN013', '2023-11-14'),
+(11019, 'CN014', '2023-11-14'),
+(11019, 'CN015', '2023-11-14'),
+(11019, 'CN016', '2023-11-14'),
+(11019, 'CN017', '2023-11-14'),
+(11019, 'CN018', '2023-11-14'),
+(12715, 'CN019', '2023-11-14'),
+(12715, 'CN020', '2023-11-14'),
+(12715, 'CN021', '2023-11-14'),
+(12715, 'CN022', '2023-11-14'),
+(12715, 'CN023', '2023-11-14'),
+(12715, 'CN024', '2023-11-14'),
+(13021, 'CN025', '2023-11-14'),
+(13021, 'CN026', '2023-11-14'),
+(13021, 'CN027', '2023-11-14'),
+(13021, 'CN028', '2023-11-14'),
+(13021, 'CN029', '2023-11-14'),
+(13021, 'CN030', '2023-11-14'),
+(14552, 'CN031', '2023-11-14'),
+(14552, 'CN032', '2023-11-14'),
+(14552, 'CN033', '2023-11-14'),
+(14552, 'CN034', '2023-11-14'),
+(14552, 'CN035', '2023-11-14'),
+(14552, 'CN036', '2023-11-14'),
+(17325, 'CN037', '2023-11-14'),
+(17325, 'CN038', '2023-11-14'),
+(17325, 'CN039', '2023-11-14'),
+(17325, 'CN040', '2023-11-14'),
+(17325, 'CN041', '2023-11-14'),
+(17325, 'CN042', '2023-11-14'),
+(18234, 'CN043', '2023-11-14'),
+(18234, 'CN044', '2023-11-14'),
+(18234, 'CN045', '2023-11-14'),
+(18234, 'CN046', '2023-11-14'),
+(18234, 'CN047', '2023-11-14'),
+(18234, 'CN048', '2023-11-14'),
+(19627, 'CN049', '2023-11-14'),
+(19627, 'CN050', '2023-11-14'),
+(19627, 'CN051', '2023-11-14'),
+(19627, 'CN052', '2023-11-14'),
+(19627, 'CN053', '2023-11-14'),
+(19627, 'CN054', '2023-11-14'),
+(22222, 'CN055', '2023-11-14'),
+(22222, 'CN056', '2023-11-14'),
+(22222, 'CN057', '2023-11-14'),
+(22222, 'CN058', '2023-11-14'),
+(22222, 'CN059', '2023-11-14'),
+(22222, 'CN060', '2023-11-14'),
+(22945, 'CN061', '2023-11-14'),
+(22945, 'CN062', '2023-11-14'),
+(22945, 'CN063', '2023-11-14'),
+(22945, 'CN064', '2023-11-14'),
+(22945, 'CN065', '2023-11-14'),
+(22945, 'CN066', '2023-11-14');
+
+```
+```sql
+INSERT INTO active_coaches (coach_no, train_no) VALUES
 ('CN001', '10102'),
 ('CN002', '10102'),
 ('CN003', '10102'),
