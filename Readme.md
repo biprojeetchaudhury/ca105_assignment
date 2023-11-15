@@ -2,6 +2,13 @@
 
 # <center>INTERCITY EXPRESS TRAINS</center>
 
+## Member Contributions
+   - ### Shashi Ranjan Kumar
+       * ER Diagram,Relations
+  - ### Ankit Kumar
+      * Data collection and organization
+  - ### Biprojeet Choudhary
+      * Data Organization and Insertion of Data into tables
 ## Entity Relationship Diagram
 
 <img
