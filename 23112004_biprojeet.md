@@ -13,7 +13,7 @@
 ## OUTPUT
 
 <img
-  src="./23112004_biprojeet/c1.png"
+  src="./23112004_biprojeet/c1.jpg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto;width: 100%;height:100%;padding:10px">
@@ -47,7 +47,7 @@ SELECT
 ## OUTPUT
 
 <img
-  src="./23112004_biprojeet/c2.png"
+  src="./23112004_biprojeet/c2.jpg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto;width: 100%;height:100%;padding:10px">
@@ -80,7 +80,7 @@ SELECT
 ## OUTPUT
 
 <img
-  src="./23112004_biprojeet/c3.png"
+  src="./23112004_biprojeet/c3.jpg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto;width: 100%;height:100%;padding:10px">
@@ -106,7 +106,7 @@ SELECT
 ## OUTPUT
 
 <img
-  src="./23112004_biprojeet/c4.png"
+  src="./23112004_biprojeet/c4.jpg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto;width: 100%;height:100%;padding:10px">
@@ -145,7 +145,7 @@ SELECT
 ## OUTPUT
 
 <img
-  src="./23112004_biprojeet/c5.png"
+  src="./23112004_biprojeet/c5.jpg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto;width: 100%;height:100%;padding:10px">
