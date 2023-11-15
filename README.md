@@ -27,7 +27,8 @@ Standby_Coach(Coach_no,Date)
  
 Maintainance(Maintain_no,Maintain_date,Maintain_type,Coach_no)
  
-Tickets(Ticket_no,Train_no,Status,passenger_name,Age,Board_stn,drop_stn,date_of_journey,booking_date,fare,discount,travel_agent_id,agent_comm)
+Tickets(Ticket_no,Train_no,Status,passenger_name,Age,Board_stn,drop_stn,date_of_journey,booking_date,fare,discount,
+          travel_agent_id,agent_comm)
  
 Travel_Agents(Travel_Agent_Id,Travel_Agent_Name,ADD,MOB,Email)
  
