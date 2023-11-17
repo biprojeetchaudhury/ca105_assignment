@@ -780,7 +780,7 @@ INSERT INTO staffs (staff_no, staff_name, contact_no, residence_city) VALUES
 ```
 
 ```sql
-INSERT INTO ticket_info (ticket_no, train_no, status, passenger_name, age, passenger_type, board_stn, drop_stn, date_of_journey, booking_date, fare, discount, travel_agent_id, agent_comm)VALUES
+INSERT INTO tickets (ticket_no, train_no, status, passenger_name, age, passenger_type, board_stn, drop_stn, date_of_journey, booking_date, fare, discount, travel_agent_id, agent_comm)VALUES
 ('TKT001', 22945, 'confirmed', 'Priya Patel', 28, 'adult', 'CSMT', 'JAM', '2023-12-15', '2023-11-01', 1200, 0, 'TA001', 120),
 ('TKT002', 22946, 'confirmed', 'Rajesh Kumar', 35, 'adult', 'JAM', 'CSMT', '2023-12-18', '2023-11-03', 1500, 0, 'TA002', 150),
 ('TKT003', 14552, 'pending', 'Neha Sharma', 22, 'adult', 'UHL', 'NDLS', '2023-12-20', '2023-11-15', 1100, 0, 'TA003', 110),
@@ -840,7 +840,15 @@ INSERT INTO ticket_info (ticket_no, train_no, status, passenger_name, age, passe
 ('TKT057', 13022, 'confirmed', 'Anil Sharma', 59, 'adult', 'RXL', 'HWH', '2024-03-15', '2024-02-05', 1300, 130, 'TA001', 130),
 ('TKT058', 12715, 'pending', 'Meera Das', 8, 'child', 'BPL', 'NDLS', '2024-03-20', '2024-02-10', 1350, 338, NULL, NULL),
 ('TKT059', 13022, 'confirmed', 'Aditi Reddy', 65, 'senior citizen', 'RXL', 'HWH', '2024-03-25', '2024-02-15', 1400, 140, 'TA003', 140),
-('TKT060', 10102, 'confirmed', 'Suresh Patel', 31, 'adult', 'VSG', 'CSMT', '2024-03-30', '2024-02-20', 1450, 0, 'TA004', 145);
+('TKT060', 10102, 'confirmed', 'Suresh Patel', 31, 'adult', 'VSG', 'CSMT', '2024-03-30', '2024-02-20', 1450, 0, 'TA004', 145),
+('TKT061', 16505, 'pending', 'Ankit Kumar', 25, 'adult', 'DWR', 'SBC', '2023-10-10', '2023-10-08', 2100, 0, NULL, NULL),
+('TKT062', 16505, 'pending', 'Rishi Kumar', 24, 'adult', 'DWR', 'SBC', '2023-10-14', '2023-10-09', 2100, 0, NULL, NULL),
+('TKT063', 18505, 'pending', 'Yash Kumar', 20, 'adult', 'DWR', 'SBC', '2023-10-14', '2023-10-09', 2100, 0, NULL, NULL),
+('TKT064', 18505, 'pending', 'Shashi Ranjan', 23, 'adult', 'DWR', 'SBC', '2023-10-09', '2023-10-09', 2100, 0, NULL, NULL),
+('TKT065', 18505, 'pending', 'Shashi Ranjan', 23, 'adult', 'DWR', 'SBC', '2023-10-15', '2023-10-09', 2100, 0, NULL, NULL),
+('TKT066', 18505, 'confirmed', 'Shashi Ranjan', 23, 'adult', 'DWR', 'SBC', '2023-10-06', '2023-10-05', 2100, 0, NULL, NULL),
+('TKT067', 18505, 'confirmed', 'Rajiv Ranjan', 23, 'adult', 'DWR', 'SBC', '2023-10-09', '2023-10-09', 2100, 0, NULL, NULL),
+('TKT068', 18505, 'confirmed', 'Ritesh Yeole', 23, 'adult', 'DWR', 'SBC', '2023-10-11', '2023-10-09', 2100, 0, NULL, NULL);
 
 ```
 
