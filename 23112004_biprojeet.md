@@ -5,7 +5,7 @@
  Select train_no, train_name
     -> FROM trains
     ->  WHERE train_no NOT IN (
-    ->  SELECT DISTINCT t.Route_no
+    ->  SELECT DISTINCT t.Train_no
     ->  FROM train_schedule t
     ->  WHERE t.Date = '2023-10-10'
     ->  );
