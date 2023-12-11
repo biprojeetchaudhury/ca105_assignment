@@ -5,9 +5,9 @@
  Select train_no, train_name
     -> FROM trains
     ->  WHERE route_no NOT IN (
-    ->  SELECT DISTINCT t.Route_no
-    ->  FROM train_schedule t
-    ->  WHERE t.Date = '2023-10-10'
+    ->  SELECT DISTINCT Route_no
+    ->  FROM train_schedule
+    ->  WHERE Date = '2023-10-10'
     ->  );
 ```
 ## OUTPUT
