@@ -12,7 +12,7 @@
 ## Entity Relationship Diagram
 
 <img
-  src="./updatedErdiagram.jpg"
+  src="./SmartSelect_20240208_114533_Samsung Notes.jpg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto;width: 100%;height:100%;padding:10px">
